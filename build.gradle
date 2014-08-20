@@ -11,6 +11,8 @@ repositories {
 dependencies {
     apt project(':pojogen')
     compile project(':pojogen')
+
+    testCompile 'junit:junit:4.11' // Not required by pojogen, only by example tests
 }
 
 compileJava.classpath += configurations.apt
