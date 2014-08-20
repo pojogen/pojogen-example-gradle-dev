@@ -17,3 +17,7 @@ dependencies {
 
 compileJava.classpath += configurations.apt
 compileJava.options.compilerArgs = ["-processor", "com.pojogen.api.apt.PojoGenAnnotationProcessor"]
+
+test {
+    include '**/*Test.class' // workaround http://stackoverflow.com/questions/14814837/gradle-test-fails-with-error
+}
