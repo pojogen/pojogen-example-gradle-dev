@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+configurations {
+    apt
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    apt project(':pojogen')
+    compile project(':pojogen')
+}
+
+compileJava.classpath += configurations.apt
+compileJava.options.compilerArgs = ["-processor", "com.pojogen.api.apt.PojoGenAnnotationProcessor"]

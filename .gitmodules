@@ -1,0 +1,3 @@
+[submodule "pojogen"]
+	path = pojogen
+	url = https://github.com/pojogen/pojogen.git

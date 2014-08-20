@@ -1,2 +1,5 @@
 # Gradle work directory
 .gradle/
+
+# Gradle build directory
+build/
